@@ -1,0 +1,12 @@
+[04-Apr-2022 12:23:12 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home4/ashmabrd/nexdee.com/mail.php:7
+Stack trace:
+#0 {main}
+  thrown in /home4/ashmabrd/nexdee.com/mail.php on line 7
+[04-Apr-2022 12:23:36 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home4/ashmabrd/nexdee.com/mail.php:7
+Stack trace:
+#0 {main}
+  thrown in /home4/ashmabrd/nexdee.com/mail.php on line 7
+[04-Apr-2022 12:24:59 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home4/ashmabrd/nexdee.com/mail.php:7
+Stack trace:
+#0 {main}
+  thrown in /home4/ashmabrd/nexdee.com/mail.php on line 7

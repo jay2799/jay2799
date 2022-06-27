@@ -1,0 +1,1015 @@
+/*
+@File: Emilono Template Styles
+
+* This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+
+This files table contents are outlined below>>>>>
+
+*******************************************
+*******************************************
+
+** - Default CSS
+** - Preloader CSS
+** - Navbar CSS
+** - Coming Soon CSS
+** - Sidebar Modal CSS
+*/
+/*================================================
+Default CSS
+=================================================*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+p {
+  font-size: 14px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.d-table {
+  width: 100%;
+  height: 100%;
+}
+
+.d-table-cell {
+  vertical-align: middle;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*================================================
+Preloader CSS
+=================================================*/
+.preloader {
+  position: fixed;
+  left: 0;
+  width: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 9999999;
+  background-color: #231f5a;
+}
+
+.preloader .loader {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 45%;
+  -webkit-transform: translateY(-45%);
+          transform: translateY(-45%);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.preloader .loader-circle {
+  border-top: 2px solid #ffffff;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.preloader span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*================================================
+Navbar CSS
+=================================================*/
+.navbar-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 99;
+  padding-top: 30px;
+}
+
+.navbar-menu {
+  text-align: right;
+}
+
+.navbar-menu .logo {
+  display: none;
+  text-align: left;
+}
+
+.navbar-menu .logo a {
+  display: inline-block;
+}
+
+.navbar-menu .burger-menu {
+  width: 35px;
+  height: auto;
+  background-color: transparent;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.navbar-menu .burger-menu span {
+  display: block;
+  width: 35px;
+  height: 3px;
+  background: #000000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-bottom: 4px;
+}
+
+.navbar-menu .burger-menu span:nth-child(3) {
+  margin-bottom: 0;
+  width: 28px;
+  margin-left: auto;
+}
+
+.navbar-menu .burger-menu:hover span:nth-child(3) {
+  width: 35px;
+}
+
+/*================================================
+Coming Soon Area CSS
+=================================================*/
+.coming-soon-area {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-image: url(../../assets/img/bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.countdown-timer {
+  text-align: center;
+}
+
+.countdown-timer #timer {
+  margin: 0 auto;
+  width: 540px;
+  height: 540px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.countdown-timer #timer div {
+  color: #ffffff;
+  padding-top: 100px;
+  font-size: 210px;
+  font-weight: 700;
+}
+
+.countdown-timer #timer div span {
+  margin-top: -60px;
+  display: block;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.countdown-timer #timer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #231f5a;
+  z-index: -1;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+.countdown-timer #timer::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-animation-name: rotateMe;
+          animation-name: rotateMe;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  background-image: url(../../assets/img/border.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.coming-soon-content {
+  max-width: 685px;
+}
+
+.coming-soon-content .logo {
+  margin-bottom: 25px;
+}
+
+.coming-soon-content .logo a {
+  display: inline-block;
+}
+
+.coming-soon-content h1 {
+  line-height: 1.3;
+  display: inline;
+  -webkit-transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  padding: 0.1% 0px;
+  color: inherit;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffeef2), to(#ffeef2));
+  background-image: linear-gradient(to right, #ffeef2 0%, #ffeef2 100%);
+  background-size: 100% 13px;
+  background-position: 0px 91%;
+  background-repeat: no-repeat;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.coming-soon-content h1 span {
+  color: #231f5a;
+}
+
+.coming-soon-content p {
+  line-height: 1.8;
+  color: #777777;
+  display: block;
+  max-width: 600px;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.coming-soon-content form {
+  max-width: 500px;
+  position: relative;
+  margin-top: 35px;
+}
+
+.coming-soon-content form input[type="text"], .coming-soon-content form input[type="email"] {
+  display: block;
+  width: 100%;
+  height: 55px;
+  -webkit-box-shadow: 0 5px 28.5px 1.5px rgba(149, 152, 200, 0.15);
+          box-shadow: 0 5px 28.5px 1.5px rgba(149, 152, 200, 0.15);
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #000000;
+  padding-left: 20px;
+  outline: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.coming-soon-content form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 55px;
+  line-height: 55px;
+  padding: 0 30px;
+  background-color: #231f5a;
+  border-radius: 0 30px 30px 0;
+  border: none;
+  color: #ffffff;
+  outline: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 14.5px;
+}
+
+.coming-soon-content form button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.coming-soon-content form #validator-newsletter {
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  right: 0;
+  font-size: 14px;
+  color: #000000;
+  margin: 0 auto;
+}
+
+.coming-soon-content form #validator-newsletter.validation-danger {
+  color: red;
+}
+
+.coming-soon-content .social {
+  margin-top: 45px;
+  text-align: center;
+  max-width: 495px;
+}
+
+.coming-soon-content .social h3 {
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+}
+
+.coming-soon-content .social h3 span {
+  display: inline-block;
+  padding: 0 15px;
+  background-color: #ffffff;
+}
+
+.coming-soon-content .social h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 100%;
+  height: 1px;
+  background-color: #eeeeee;
+  z-index: -1;
+}
+
+.coming-soon-content .social ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.coming-soon-content .social ul li {
+  display: inline-block;
+  margin: 0 1px;
+}
+
+.coming-soon-content .social ul li a {
+  width: 35px;
+  height: 35px;
+  line-height: 37px;
+  display: block;
+  border-radius: 50%;
+  background-color: #dddddd;
+  color: #000000;
+  font-size: 14px;
+}
+
+.coming-soon-content .social ul li a.twitter {
+  background-color: #1da1f2;
+  color: #ffffff;
+}
+
+.coming-soon-content .social ul li a.youtube {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.coming-soon-content .social ul li a.facebook {
+  background-color: #3b5998;
+  color: #ffffff;
+}
+
+.coming-soon-content .social ul li a.linkedin {
+  background-color: #0077b5;
+  color: #ffffff;
+}
+
+.coming-soon-content .social ul li a.instagram {
+  background-color: #c13584;
+  color: #ffffff;
+}
+
+.coming-soon-content .social ul li a:hover {
+  background-color: #231f5a;
+  color: #ffffff;
+}
+
+.shape1 {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  z-index: -1;
+}
+
+.shape2 {
+  position: absolute;
+  z-index: -1;
+  left: 3%;
+  top: 25%;
+  -webkit-animation-name: rotateMe;
+          animation-name: rotateMe;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.shape3 {
+  position: absolute;
+  left: 2%;
+  bottom: 20%;
+  z-index: -1;
+  -webkit-animation: moveScale 10s linear infinite;
+          animation: moveScale 10s linear infinite;
+}
+
+.shape4 {
+  position: absolute;
+  left: 30%;
+  top: 8%;
+  z-index: -1;
+  -webkit-animation: rotate3d 4s linear infinite;
+          animation: rotate3d 4s linear infinite;
+}
+
+.shape5 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.shape6 {
+  position: absolute;
+  left: 56%;
+  top: 4%;
+  z-index: -1;
+  -webkit-animation: animationFramesOne 20s infinite linear;
+          animation: animationFramesOne 20s infinite linear;
+}
+
+.shape7 {
+  position: absolute;
+  left: 20%;
+  bottom: 10%;
+  z-index: -1;
+  -webkit-animation: animationFramesOne 20s infinite linear;
+          animation: animationFramesOne 20s infinite linear;
+}
+
+.shape8 {
+  position: absolute;
+  left: 45%;
+  bottom: 10%;
+  z-index: -1;
+  -webkit-animation-name: rotateMe;
+          animation-name: rotateMe;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.shape9 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.shape10 {
+  position: absolute;
+  right: 6%;
+  bottom: 8%;
+  z-index: -1;
+  -webkit-animation: moveScale 5s linear infinite;
+          animation: moveScale 5s linear infinite;
+}
+
+.shape11 {
+  position: absolute;
+  top: 30%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  right: 0;
+  z-index: -1;
+  -webkit-animation: moveBounce 5s linear infinite;
+          animation: moveBounce 5s linear infinite;
+}
+
+.shape12 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+  z-index: -1;
+}
+
+.shape12 img {
+  max-width: 65%;
+}
+
+.shape13 {
+  position: absolute;
+  left: 37%;
+  top: 28%;
+  z-index: -1;
+  -webkit-animation: moveLeftBounce 5s linear infinite;
+          animation: moveLeftBounce 5s linear infinite;
+}
+
+@-webkit-keyframes rotateMe {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateMe {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes moveBounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes moveBounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes moveLeftBounce {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes moveLeftBounce {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes moveScale {
+  0% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
+
+@keyframes moveScale {
+  0% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
+
+@-webkit-keyframes rotate3d {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotate3d {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes animationFramesOne {
+  0% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+            transform: translate(0px, 0px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translate(73px, -1px) rotate(36deg);
+            transform: translate(73px, -1px) rotate(36deg);
+  }
+  40% {
+    -webkit-transform: translate(141px, 72px) rotate(72deg);
+            transform: translate(141px, 72px) rotate(72deg);
+  }
+  60% {
+    -webkit-transform: translate(83px, 122px) rotate(108deg);
+            transform: translate(83px, 122px) rotate(108deg);
+  }
+  80% {
+    -webkit-transform: translate(-40px, 72px) rotate(144deg);
+            transform: translate(-40px, 72px) rotate(144deg);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+            transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes animationFramesOne {
+  0% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+            transform: translate(0px, 0px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translate(73px, -1px) rotate(36deg);
+            transform: translate(73px, -1px) rotate(36deg);
+  }
+  40% {
+    -webkit-transform: translate(141px, 72px) rotate(72deg);
+            transform: translate(141px, 72px) rotate(72deg);
+  }
+  60% {
+    -webkit-transform: translate(83px, 122px) rotate(108deg);
+            transform: translate(83px, 122px) rotate(108deg);
+  }
+  80% {
+    -webkit-transform: translate(-40px, 72px) rotate(144deg);
+            transform: translate(-40px, 72px) rotate(144deg);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+            transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+/*================================================
+Sidebar Modal CSS
+=================================================*/
+.sidebar-modal {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.sidebar-modal .sidebar-modal-inner {
+  position: absolute;
+  right: -100%;
+  top: 0;
+  width: 40%;
+  overflow-y: scroll;
+  height: 100%;
+  background-color: #ffffff;
+  -webkit-transition: .7s;
+  transition: .7s;
+  z-index: 1;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.sidebar-modal .sidebar-modal-inner .close-btn {
+  display: inline-block;
+  position: absolute;
+  right: 35px;
+  top: 20px;
+  font-size: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #000000;
+  opacity: .66;
+  cursor: pointer;
+}
+
+.sidebar-modal .sidebar-modal-inner .close-btn:hover {
+  opacity: 1;
+}
+
+.sidebar-modal .about-area {
+  margin-bottom: 40px;
+}
+
+.sidebar-modal .about-area .title h2 {
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+}
+
+.sidebar-modal .about-area .title p {
+  font-size: 14px;
+  margin-top: 12px;
+  line-height: 1.7;
+  color: #333333;
+}
+
+.sidebar-modal .contact-area .title {
+  margin-bottom: 25px;
+}
+
+.sidebar-modal .contact-area .title h2 {
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+}
+
+.sidebar-modal .contact-area .contact-form {
+  max-width: 500px;
+}
+
+.sidebar-modal .contact-area .contact-form form .form-control {
+  height: 45px;
+  border: none;
+  -webkit-box-shadow: 0 5px 28.5px 1.5px rgba(149, 152, 200, 0.15);
+          box-shadow: 0 5px 28.5px 1.5px rgba(149, 152, 200, 0.15);
+  background-color: #ffffff;
+  font-size: 13.5px;
+  padding-left: 15px;
+  color: #000000;
+}
+
+.sidebar-modal .contact-area .contact-form form textarea.form-control {
+  height: auto;
+  padding-top: 10px;
+}
+
+.sidebar-modal .contact-area .contact-form form button {
+  margin-top: 10px;
+  border: none;
+  background-color: #000000;
+  outline: 0;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 5px 28.5px 1.5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 28.5px 1.5px rgba(0, 0, 0, 0.3);
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+
+.sidebar-modal .contact-area .contact-form form button:hover {
+  color: #ffffff;
+  background-color: #231f5a;
+}
+
+.sidebar-modal .contact-area .contact-form form .help-block ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.sidebar-modal .contact-area .contact-form form .help-block.with-errors ul {
+  color: red;
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.sidebar-modal .contact-area .contact-form form #msgSubmit {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.sidebar-modal .contact-area .contact-form form #msgSubmit.text-danger {
+  margin-top: 8px;
+}
+
+.sidebar-modal .contact-area .contact-form form #msgSubmit.text-success {
+  margin-top: 8px;
+}
+
+.sidebar-modal .contact-area .contact-info {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content h2 {
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content h2 a {
+  display: inline-block;
+  color: #231f5a;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content h2 a:hover {
+  color: #000000;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content h2 a:not(:first-child) {
+  color: #000000;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content h2 a:not(:first-child):hover {
+  color: #231f5a;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content h2 span {
+  display: block;
+  color: #57647c;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content .social {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content .social li {
+  display: inline-block;
+  margin: 0 1px;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content .social li a {
+  width: 35px;
+  height: 35px;
+  line-height: 34px;
+  border: 1px solid #dadada;
+  border-radius: 50%;
+  color: #aba5a5;
+  display: block;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content .social li a i {
+  font-size: 14px;
+}
+
+.sidebar-modal .contact-area .contact-info .contact-info-content .social li a:hover {
+  color: #ffffff;
+  border-color: #231f5a;
+  background-color: #231f5a;
+}
+
+.sidebar-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar-modal.active .sidebar-modal-inner {
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */

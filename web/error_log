@@ -1,0 +1,5 @@
+[26-Apr-2022 09:17:41 UTC] PHP Fatal error:  Cannot redeclare Admin::edit_categories() in /home4/ashmabrd/nexdee.com/web/application/controllers/Admin.php on line 888
+[26-Apr-2022 13:19:40 UTC] PHP Fatal error:  Can't use method return value in write context in /home4/ashmabrd/nexdee.com/web/application/controllers/Admin.php on line 1282
+[26-Apr-2022 13:19:42 UTC] PHP Fatal error:  Can't use method return value in write context in /home4/ashmabrd/nexdee.com/web/application/controllers/Admin.php on line 1282
+[29-Apr-2022 10:39:30 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home4/ashmabrd/nexdee.com/web/application/controllers/Welcome.php on line 44
+[29-Apr-2022 10:39:32 UTC] PHP Fatal error:  Cannot use temporary expression in write context in /home4/ashmabrd/nexdee.com/web/application/controllers/Welcome.php on line 44
